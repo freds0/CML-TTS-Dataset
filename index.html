@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <title>DeepBonDD by mtreviso</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="shortcut icon" type="image/x-icon" href="favicons/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section id="page-header" class="page-header">
+        <div id="bg-header"></div>
+        <canvas id="demo-canvas"></canvas>
+        <div class="main-title">
+          <h1 class="project-name"><span><a href="index.html">DeepBonDD</a></span></h1>
+          <!-- <h2 class="project-tagline">Sentence Boundary Detection using Deep Learning</h2> -->
+          <h2 class="project-tagline">Deep neural approach to Boundary and Disfluency Detection</h2>
+          <!-- <a href="https://github.com/mtreviso/deepbond" class="btn">Ver no GitHub</a> -->
+          <div class="dropdown">
+            <a href="projeto.html" class="btn">O Projeto</a>
+            <div class="dropdown-content">
+              <a href="projeto.html#introducao">Introdução</a>
+              <a href="projeto.html#hipoteses">Hipóteses</a>
+              <a href="projeto.html#objetivos">Objetivos</a>
+              <a href="projeto.html#metodologia">Metodologia</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <a href="ferramenta.html" class="btn">A Ferramenta</a>
+            <div class="dropdown-content">
+              <a href="ferramenta.html#instalacao">Como instalar</a>
+              <a href="ferramenta.html#uso">Como usar</a>
+              <a href="ferramenta.html#treinamento">Como treinar um modelo</a>
+            </div>
+          </div>
+
+          <a href="recursos.html" class="btn">Recursos</a>
+          <a href="pesquisadores.html" class="btn">Pesquisadores</a>
+          <a href="publicacoes.html" class="btn">Publicações</a>
+          <a href="contato.html" class="btn">Contato</a>
+
+        </div>
+    </section>
+
+    <section class="main-content">
+
+      <center>
+        <a href="https://github.com/mtreviso/deepbond" class="btn2">• GitHub •</a>
+        <a href="tutorial.html" class="btn2">• Tutorial •</a>
+        <a href="http://fw.nilc.icmc.usp.br:23680/" target="_blank" class="btn2">• Interface Online •</a>
+      </center>
+
+      
+
+
+      <h3>Como citar</h3>
+      <pre class="highlight">
+@inproceedings{treviso2018sentence,
+  author = "Marcos Vinícius Treviso and Sandra Maria Aluísio",
+  title = "Sentence Segmentation and Disfluency Detection in Narrative Transcripts from Neuropsychological Tests",
+  booktitle = "Computational Processing of the Portuguese Language (PROPOR)",
+  year = "2018",
+  publisher = "Springer International Publishing",
+  pages = "409--418",
+}</pre>
+
+      
+      <h3>Resumo</h3>
+
+      <p>
+      <b>Contexto:</b> Nos últimos anos, o Comprometimento Cognitivo Leve (CCL) tem recebido uma grande atenção, pois pode representar um estágio pré-clínico da Doença de Alzheimer (DA). Em termos de distinção entre idosos saudáveis (CTL) e pacientes com CCL, vários estudos têm mostrado que a produção de discurso é uma tarefa sensível para detectar efeitos de envelhecimento e para diferenciar indivíduos com CCL dos saudáveis. Ferramentas de Processamento de Língua Natural (PLN) têm sido aplicadas em transcrições de narrativas em inglês e também em português brasileiro, por exemplo, o ambiente Coh-Metrix-Dementia. 
+      </p>
+
+      <p>
+      <b>Lacunas:</b> No entanto, a ausência de informações de limites de sentenças e a presença de disfluências em transcrições impedem a aplicação direta de ferramentas que dependem de um texto bem formado, como taggers e parsers. 
+      </p>
+
+      <p>
+      <b>Objetivos:</b> O objetivo principal deste trabalho é desenvolver métodos para segmentar as transcrições em sentenças e detectar/remover as disfluências presentes nelas, de modo que sirvam como uma etapa de pré-processamento para ferramentas subsequentes de PLN.
+      </p>
+
+      <p>
+      <b>Métodos e Avaliação:</b> Propusemos um método baseado em redes neurais recorrentes convolucionais (RCNNs) com informações prosódicas, morfossintáticas e word embeddings para a tarefa de segmentação de sentenças (SS). Já para a detecção de disfluências (DD), dividimos o método e a avaliação de acordo com as categorias de disfluências: (i) para preenchimentos (pausas preenchidas e marcadores discursivos), propusemos a mesma RCNN com as mesmas features de SS em conjunto com uma lista pré-determinada de palavras; (ii) para disfluências de edição (repetições, revisões e recomeços), adicionamos features tradicionalmente empregadas em trabalhos relacionados e introduzimos um modelo de CRF na camada de saída da RCNN. Avaliamos todas as tarefas intrinsecamente, analisando as features mais importantes, comparando os métodos propostos com métodos mais simples, e identificando os principais acertos e erros. Além disso, um método final, chamado DeepBonDD, foi criado combinando todas as tarefas, e foi avaliado extrinsecamente com 9 métricas sintáticas do Coh-Metrix-Dementia. 
+      </p>
+
+      <p>
+      <b>Conclusão:</b> Para SS, obteve-se F 1 = 0.77 em transcrições de CTL e F 1 = 0.74 de CCL, caracterizando o estado-da-arte para esta tarefa em fala comprometida. Para detecção de preenchimentos, obtevese em média F 1 = 0.90 para CTL e F 1 = 0.92 para CCL, resultados que estão dentro da margem de trabalhos relacionados da língua inglesa. Ao serem ignorados os recomeços na detecção de disfluências de edição, obteve-se em média F 1 = 0.70 para CTL e F 1 = 0.75 para CCL. Na avaliação extrínseca, apenas 3 métricas mostraram diferença significativa entre as transcrições de CCL manuais e as geradas pelo DeepBonDD, sugerindo que, apesar das variações de limites de sentença e de disfluências, o DeepBonDD é capaz de gerar transcrições para serem processadaspor ferramentas de PLN.
+      </p>
+      
+
+      <h3>Suporte</h3>
+      <p>Sinta-se livre para entrar em contato através do email: <em>marcostreviso@usp.br</em></p>
+
+      <footer class="site-footer">
+
+          <span class="site-footer-owner"><a href="https://github.com/mtreviso/deepbond">DeepBond</a> is maintained by <a href="https://github.com/mtreviso">mtreviso</a>.</span>
+
+          <a href="http://icmc.usp.br/" title="Instituto de Ciências Matemáticas e de Computação (ICMC)" target="_blank"> <img src="img/icmc.png" border="0" height="42"> </a>
+          
+          <a href="http://nilc.icmc.usp.br/" title="Núcleo Interinstitucional de Linguística Computacional (NILC)" target="_blank"> <img src="img/nilc.png" border="0" height="42"> </a>
+
+          <div class="cleaner"></div>
+
+      </footer>
+
+    </section>
+
+
+
+
+    <script src="js/animheader.js"></script>
+  
+  </body>
+</html>
