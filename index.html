@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <title>YourTTS</title>
@@ -50,7 +49,7 @@
     <section class="main-content">
 
         <center>
-            <a href="https://github.com/Edresson/YourTTS/" class="btn2">• GitHub •</a>
+            <a href="https://github.com/freds0/CML-TTS-Dataset" class="btn2">• GitHub •</a>
             <a href="https://arxiv.org/abs/2112.02418" class="btn2">• Paper on arXiv •</a></li>
             <a href="https://github.com/Edresson/YourTTS/#colab-demos" class="btn2">• Colab demos •</a></li>
 
@@ -59,526 +58,521 @@
         </center>
 
 
+<br>
+<br>
+<div style="text-align: center;">
+    <h2>CML-TTS: A Multilingual Dataset for Speech Synthesis</h3>
+        <p> <b>Frederico Oliveira, Edresson Casanova, Arnaldo Candido Junior, Anderson da Silva Soares</b></p>
+</div>
 
-
-        <br>
-        <br>
-        <div style="text-align: center;">
-            <h2>CML-TTS: A Multilingual Dataset for Speech Synthesis</h3>
-
-                <p> <b>Frederico Oliveira, Edresson Casanova, Arnaldo Candido Junior, Anderson da Silva Soares</b></p>
-
-
-        </div>
-
-
-        <h3>Abstract:</h3>
-
+<h3>Abstract:</h3>
 <p>
-            In this paper, we present CML-TTS, a recursive acronym for CML-Multi-Lingual-TTS, a new Text-to-Speech (TTS) dataset developed at the Center of Excellence in Artificial Intelligence (CEIA) of the Federal University of Goias (UFG). CML-TTS is based on Multilingual LibriSpeech (MLS) and adapted for training TTS models, consisting of audiobooks in seven languages: Dutch, French, German, Italian, Portuguese, Polish, and Spanish. Additionally, we provide the YourTTS model, a multi-lingual TTS model, trained using CML-TTS and also LibriTTS, in English. Our purpose in creating this dataset is to open up new research possibilities in the TTS area for multi-lingual models.
-
+In this paper, we present CML-TTS, a recursive acronym for CML-Multi-Lingual-TTS, a new Text-to-Speech (TTS) dataset developed at the Center of Excellence in Artificial Intelligence (CEIA) of the Federal University of Goias (UFG). CML-TTS is based on Multilingual LibriSpeech (MLS) and adapted for training TTS models, consisting of audiobooks in seven languages: Dutch, French, German, Italian, Portuguese, Polish, and Spanish. Additionally, we provide the YourTTS model, a multi-lingual TTS model, trained using CML-TTS and also LibriTTS, in English. Our purpose in creating this dataset is to open up new research possibilities in the TTS area for multi-lingual models.
 </p>
 
 <h3>CML-TTS Statistics</h3>
 
-<p>CML-TTS is a dataset composed of reading audiobooks from the <a href="https://librivox.org/" target="_blank">LibriVox</a> project, which uses books from <a href="https://www.gutenberg.org/" target="_blank">Project Gutenberg</a>, released in the public domain. It consists of recordings in Dutch, German, French, Italian, Polish, Portuguese, and Spanish, with a sampling rate of 24kHz. The following are details about the CML-TTS creation process.</p>
+<p>CML-TTS is a dataset comprising audiobooks sourced from the public domain books of <a href="https://www.gutenberg.org/" target="_blank">Project Gutenberg</a>, read by volunteers from the <a href="https://librivox.org/" target="_blank">LibriVox</a> project. The dataset includes recordings in Dutch, German, French, Italian, Polish, Portuguese, and Spanish, all at a sampling rate of 24kHz. The following figure shows pie charts indicating the percentage of each language's duration (on the left), sample quality percentage (in the center), and the percentage of speakers' gender (on the right).</p>
 
-<p>In the following figure pie charts can be checked indicating the percentage considering the duration of each language (on the left), the percentage of quality of the samples (at center), and the percentage in relation to the gender of the speakers (on the right).</p>
+<center>
+    <div style="display: flex; justify-content: center;">
+        <img src="img/cml_tts_pieplot.png" width="720">
+    </div>
+</center>
 
-        <center>
-            <p><img src="img/cml_tts_pieplot.png" width="720"></p>
-        </center>
+The table below displays the total duration of each language subset present in the CML-TTS dataset, as well as the duration of the Train, Test, and Dev sets. Additionally, the table provides the duration of the sets categorized by speaker gender.
 
-The table below presents the total duration in hours of each language subsets present in the CML-TTS dataset, and also of the {\it Train}, {\it Test} and {\it Dev} sets. In this table, you can also check the duration of the sets in relation to the speaker's gender.
+<center>
+    <div style="display: flex; justify-content: center;">
+        <img src="img/cml_tts_statistics.png" width="900">
+    </div>
+</center>
 
-        <center>
-            <p><img src="img/cml_tts_statistics.png" width="720"></p>
-        </center>
+<h3 style="text-align:center;">Dutch Samples</h3>
+<p style="text-align:center;"><b>Audio Samples for CML-TTS Dutch</b></p>
+<table style="margin:0 auto;">
+    <thead>
+        <tr>
+            <th>Speaker</th>
+            <th>Ground Truth</th>
+            <th>YourTTS</th>
+        </tr>
+    </thead>
+    <tbody>
 
-        <h3>Dutch Samples</h2>
+    <tr>
+        <td rowspan="3">880</td>
+        <td><audio controls style="width: 220px;" src="audios_demo/dutch/880/880_795_000015_ground_truth.wav"></audio></td>
+        <td><audio controls style="width: 220px;" src="audios_demo/dutch/880/880_795_000015_yourtts.wav"></audio></td>
+    </tr>
+    <tr>
+        <td><audio controls style="width: 220px;" src="audios_demo/dutch/880/880_795_000105_ground_truth.wav"></audio></td>
+        <td><audio controls style="width: 220px;" src="audios_demo/dutch/880/880_795_000105_yourtts.wav"></audio></td>
+    </tr>
+    <tr>
+        <td><audio controls style="width: 220px;" src="audios_demo/dutch/880/880_795_000166_ground_truth.wav"></audio></td>
+        <td><audio controls style="width: 220px;" src="audios_demo/dutch/880/880_795_000166_yourtts.wav"></audio></td>
+    </tr>   
+  
+   <tr>
+        <td rowspan="3">2825</td>
+        <td><audio controls style="width: 220px;" src="audios_demo/dutch/2825/2825_2211_000060_ground_truth.wav"></audio></td>
+        <td><audio controls style="width: 220px;" src="audios_demo/dutch/2825/2825_2211_000060_yourtts.wav"></audio></td>
+    </tr>
+    <tr>
+        <td><audio controls style="width: 220px;" src="audios_demo/dutch/2825/2825_2211_000104_ground_truth.wav"></audio></td>
+        <td><audio controls style="width: 220px;" src="audios_demo/dutch/2825/2825_2211_000104_yourtts.wav"></audio></td>
+    </tr>
+    <tr>
+        <td><audio controls style="width: 220px;" src="audios_demo/dutch/2825/2825_2211_000148_ground_truth.wav"></audio></td>
+        <td><audio controls style="width: 220px;" src="audios_demo/dutch/2825/2825_2211_000148_yourtts.wav"></audio></td>
+    </tr>  
 
-            <p><b>Audio Samples for CML-TTS Dutch</b></p>
+   <tr>
+        <td rowspan="3">3798</td>
+        <td><audio controls style="width: 220px;" src="audios_demo/dutch/3798/3798_2211_000007_ground_truth.wav"></audio></td>
+        <td><audio controls style="width: 220px;" src="audios_demo/dutch/3798/3798_2211_000007_yourtts.wav"></audio></td>
+    </tr>
+    <tr>
+        <td><audio controls style="width: 220px;" src="audios_demo/dutch/3798/3798_4626_000685_ground_truth.wav"></audio></td>
+        <td><audio controls style="width: 220px;" src="audios_demo/dutch/3798/3798_4626_000685_yourtts.wav"></audio></td>
+    </tr>
+    <tr>
+        <td><audio controls style="width: 220px;" src="audios_demo/dutch/3798/3798_4626_000877_ground_truth.wav"></audio></td>
+        <td><audio controls style="width: 220px;" src="audios_demo/dutch/3798/3798_4626_000877_yourtts.wav"></audio></td>
+    </tr>  
 
-            <table border="1">
-                <tr>
-                    <td>Speaker</td>
-                    <td>Ground Truth</td>
-                    <td>YourTTS</td>
-                </tr>
-
-                <tr >
-                    <td rowspan="3">880</td>
-                    <td><audio controls style="width: 220px;" src="audios_demo/dutch/880/880_795_000015_ground_truth.wav"></audio></td>
-                    <td><audio controls style="width: 220px;" src="audios_demo/dutch/880/880_795_000015_yourtts.wav"></audio></td>
-                </tr>
-                <tr>
-                    <td><audio controls style="width: 220px;" src="audios_demo/dutch/880/880_795_000105_ground_truth.wav"></audio></td>
-                    <td><audio controls style="width: 220px;" src="audios_demo/dutch/880/880_795_000105_yourtts.wav"></audio></td>
-                </tr>
-                <tr>
-                    <td><audio controls style="width: 220px;" src="audios_demo/dutch/880/880_795_000166_ground_truth.wav"></audio></td>
-                    <td><audio controls style="width: 220px;" src="audios_demo/dutch/880/880_795_000166_yourtts.wav"></audio></td>
-                </tr>   
-              
-               <tr >
-                    <td rowspan="3">2825</td>
-                    <td><audio controls style="width: 220px;" src="audios_demo/dutch/2825/2825_2211_000060_ground_truth.wav"></audio></td>
-                    <td><audio controls style="width: 220px;" src="audios_demo/dutch/2825/2825_2211_000060_yourtts.wav"></audio></td>
-                </tr>
-                <tr>
-                    <td><audio controls style="width: 220px;" src="audios_demo/dutch/2825/2825_2211_000104_ground_truth.wav"></audio></td>
-                    <td><audio controls style="width: 220px;" src="audios_demo/dutch/2825/2825_2211_000104_yourtts.wav"></audio></td>
-                </tr>
-                <tr>
-                    <td><audio controls style="width: 220px;" src="audios_demo/dutch/2825/2825_2211_000148_ground_truth.wav"></audio></td>
-                    <td><audio controls style="width: 220px;" src="audios_demo/dutch/2825/2825_2211_000148_yourtts.wav"></audio></td>
-                </tr>  
-
-               <tr >
-                    <td rowspan="3">3798</td>
-                    <td><audio controls style="width: 220px;" src="audios_demo/dutch/3798/3798_2211_000007_ground_truth.wav"></audio></td>
-                    <td><audio controls style="width: 220px;" src="audios_demo/dutch/3798/3798_2211_000007_yourtts.wav"></audio></td>
-                </tr>
-                <tr>
-                    <td><audio controls style="width: 220px;" src="audios_demo/dutch/3798/3798_4626_000685_ground_truth.wav"></audio></td>
-                    <td><audio controls style="width: 220px;" src="audios_demo/dutch/3798/3798_4626_000685_yourtts.wav"></audio></td>
-                </tr>
-                <tr>
-                    <td><audio controls style="width: 220px;" src="audios_demo/dutch/3798/3798_4626_000877_ground_truth.wav"></audio></td>
-                    <td><audio controls style="width: 220px;" src="audios_demo/dutch/3798/3798_4626_000877_yourtts.wav"></audio></td>
-                </tr>  
-
-               <tr >
-                    <td rowspan="3">11290</td>
-                    <td><audio controls style="width: 220px;" src="audios_demo/dutch/11290/11290_9412_000024_ground_truth.wav"></audio></td>
-                    <td><audio controls style="width: 220px;" src="audios_demo/dutch/11290/11290_9412_000024_yourtts.wav"></audio></td>
-                </tr>
-                <tr>
-                    <td><audio controls style="width: 220px;" src="audios_demo/dutch/11290/11290_9412_000048_ground_truth.wav"></audio></td>
-                    <td><audio controls style="width: 220px;" src="audios_demo/dutch/11290/11290_9412_000048_yourtts.wav"></audio></td>
-                </tr>
-                <tr>
-                    <td><audio controls style="width: 220px;" src="audios_demo/dutch/11290/11290_9412_000108_ground_truth.wav"></audio></td>
-                    <td><audio controls style="width: 220px;" src="audios_demo/dutch/11290/11290_9412_000108_yourtts.wav"></audio></td>
-                </tr>                
-            </table>
-
-
-        <h3>French Samples</h2>
-
-            <p><b>Audio Samples for CML-TTS French</b></p>
-
-            <table border="1">
-                <tr>
-                    <td>Speaker</td>
-                    <td>Ground Truth</td>
-                    <td>YourTTS</td>
-                </tr>
-
-                <tr >
-                    <td rowspan="3">1591</td>
-                    <td><audio controls style="width: 220px;" src="/home/fred/Projetos/CML-TTS-Dataset/audios_demo/french/1591/1591_1028_000023_ground_truth.wav"></audio></td>
-                    <td><audio controls style="width: 220px;" src="/home/fred/Projetos/CML-TTS-Dataset/audios_demo/french/1591/1591_1028_000023_yourtts.wav"></audio></td>
-                </tr>
-                <tr>
-                    <td><audio controls style="width: 220px;" src="/home/fred/Projetos/CML-TTS-Dataset/audios_demo/french/1591/1591_1028_000035_ground_truth.wav"></audio></td>
-                    <td><audio controls style="width: 220px;" src="/home/fred/Projetos/CML-TTS-Dataset/audios_demo/french/1591/1591_1028_000035_yourtts.wav"></audio></td>
-                </tr>
-                <tr>
-                    <td><audio controls style="width: 220px;" src="/home/fred/Projetos/CML-TTS-Dataset/audios_demo/french/1591/1591_1028_000096_ground_truth.wav"></audio></td>
-                    <td><audio controls style="width: 220px;" src="/home/fred/Projetos/CML-TTS-Dataset/audios_demo/french/1591/1591_1028_000096_yourtts.wav"></audio></td>
-                </tr>   
-              
-               <tr >
-                    <td rowspan="3">4193</td>
-                    <td><audio controls style="width: 220px;" src="/home/fred/Projetos/CML-TTS-Dataset/audios_demo/french/4193/4193_3103_000080_ground_truth.wav"></audio></td>
-                    <td><audio controls style="width: 220px;" src="/home/fred/Projetos/CML-TTS-Dataset/audios_demo/french/4193/4193_3103_000080_yourtts.wav"></audio></td>
-                </tr>
-                <tr>
-                    <td><audio controls style="width: 220px;" src="/home/fred/Projetos/CML-TTS-Dataset/audios_demo/french/4193/4193_3103_000092_ground_truth.wav"></audio></td>
-                    <td><audio controls style="width: 220px;" src="/home/fred/Projetos/CML-TTS-Dataset/audios_demo/french/4193/4193_3103_000092_yourtts.wav"></audio></td>
-                </tr>
-                <tr>
-                    <td><audio controls style="width: 220px;" src="/home/fred/Projetos/CML-TTS-Dataset/audios_demo/french/4193/4193_3103_000126_ground_truth.wav"></audio></td>
-                    <td><audio controls style="width: 220px;" src="/home/fred/Projetos/CML-TTS-Dataset/audios_demo/french/4193/4193_3103_000126_yourtts.wav"></audio></td>
-                </tr>  
-
-               <tr >
-                    <td rowspan="3">4482</td>
-                    <td><audio controls style="width: 220px;" src="/home/fred/Projetos/CML-TTS-Dataset/audios_demo/french/4482/4482_3103_000028_ground_truth.wav"></audio></td>
-                    <td><audio controls style="width: 220px;" src="/home/fred/Projetos/CML-TTS-Dataset/audios_demo/french/4482/4482_3103_000028_yourtts.wav"></audio></td>
-                </tr>
-                <tr>
-                    <td><audio controls style="width: 220px;" src="/home/fred/Projetos/CML-TTS-Dataset/audios_demo/french/4482/4482_3103_000080_ground_truth.wav"></audio></td>
-                    <td><audio controls style="width: 220px;" src="/home/fred/Projetos/CML-TTS-Dataset/audios_demo/french/4482/4482_3103_000080_yourtts.wav"></audio></td>
-                </tr>
-                <tr>
-                    <td><audio controls style="width: 220px;" src="/home/fred/Projetos/CML-TTS-Dataset/audios_demo/french/4482/4482_3103_000093_ground_truth.wav"></audio></td>
-                    <td><audio controls style="width: 220px;" src="/home/fred/Projetos/CML-TTS-Dataset/audios_demo/french/4482/4482_3103_000093_yourtts.wav"></audio></td>
-                </tr>    
-
-               <tr >
-                    <td rowspan="3">7400</td>
-                    <td><audio controls style="width: 220px;" src="/home/fred/Projetos/CML-TTS-Dataset/audios_demo/french/7400/7400_2928_000008_ground_truth.wav"></audio></td>
-                    <td><audio controls style="width: 220px;" src="/home/fred/Projetos/CML-TTS-Dataset/audios_demo/french/7400/7400_2928_000008_yourtts.wav"></audio></td>
-                </tr>
-                <tr>
-                    <td><audio controls style="width: 220px;" src="/home/fred/Projetos/CML-TTS-Dataset/audios_demo/french/7400/7400_2928_000049_ground_truth.wav"></audio></td>
-                    <td><audio controls style="width: 220px;" src="/home/fred/Projetos/CML-TTS-Dataset/audios_demo/french/7400/7400_2928_000049_yourtts.wav"></audio></td>
-                </tr>
-                <tr>
-                    <td><audio controls style="width: 220px;" src="/home/fred/Projetos/CML-TTS-Dataset/audios_demo/french/7400/7400_2928_000108_ground_truth.wav"></audio></td>
-                    <td><audio controls style="width: 220px;" src="/home/fred/Projetos/CML-TTS-Dataset/audios_demo/french/7400/7400_2928_000108_yourtts.wav"></audio></td>
-                </tr>                
-            </table>
+   <tr>
+        <td rowspan="3">11290</td>
+        <td><audio controls style="width: 220px;" src="audios_demo/dutch/11290/11290_9412_000024_ground_truth.wav"></audio></td>
+        <td><audio controls style="width: 220px;" src="audios_demo/dutch/11290/11290_9412_000024_yourtts.wav"></audio></td>
+    </tr>
+    <tr>
+        <td><audio controls style="width: 220px;" src="audios_demo/dutch/11290/11290_9412_000048_ground_truth.wav"></audio></td>
+        <td><audio controls style="width: 220px;" src="audios_demo/dutch/11290/11290_9412_000048_yourtts.wav"></audio></td>
+    </tr>
+    <tr>
+        <td><audio controls style="width: 220px;" src="audios_demo/dutch/11290/11290_9412_000108_ground_truth.wav"></audio></td>
+        <td><audio controls style="width: 220px;" src="audios_demo/dutch/11290/11290_9412_000108_yourtts.wav"></audio></td>
+    </tr>                
+</table>
 
 
-        <h3>German Samples</h2>
+<h3 style="text-align:center;">French Samples</h3>
+<p style="text-align:center;"><b>Audio Samples for CML-TTS French</b></p>
+<table style="margin:0 auto;">
+    <thead>
+        <tr>
+            <th>Speaker</th>
+            <th>Ground Truth</th>
+            <th>YourTTS</th>
+        </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td rowspan="3">1591</td>
+        <td><audio controls style="width: 220px;" src="audios_demo/french/1591/1591_1028_000023_ground_truth.wav"></audio></td>
+        <td><audio controls style="width: 220px;" src="audios_demo/french/1591/1591_1028_000023_yourtts.wav"></audio></td>
+    </tr>
+    <tr>
+        <td><audio controls style="width: 220px;" src="audios_demo/french/1591/1591_1028_000035_ground_truth.wav"></audio></td>
+        <td><audio controls style="width: 220px;" src="audios_demo/french/1591/1591_1028_000035_yourtts.wav"></audio></td>
+    </tr>
+    <tr>
+        <td><audio controls style="width: 220px;" src="audios_demo/french/1591/1591_1028_000096_ground_truth.wav"></audio></td>
+        <td><audio controls style="width: 220px;" src="audios_demo/french/1591/1591_1028_000096_yourtts.wav"></audio></td>
+    </tr>   
+  
+   <tr>
+        <td rowspan="3">4193</td>
+        <td><audio controls style="width: 220px;" src="audios_demo/french/4193/4193_3103_000080_ground_truth.wav"></audio></td>
+        <td><audio controls style="width: 220px;" src="audios_demo/french/4193/4193_3103_000080_yourtts.wav"></audio></td>
+    </tr>
+    <tr>
+        <td><audio controls style="width: 220px;" src="audios_demo/french/4193/4193_3103_000092_ground_truth.wav"></audio></td>
+        <td><audio controls style="width: 220px;" src="audios_demo/french/4193/4193_3103_000092_yourtts.wav"></audio></td>
+    </tr>
+    <tr>
+        <td><audio controls style="width: 220px;" src="audios_demo/french/4193/4193_3103_000126_ground_truth.wav"></audio></td>
+        <td><audio controls style="width: 220px;" src="audios_demo/french/4193/4193_3103_000126_yourtts.wav"></audio></td>
+    </tr>  
 
-            <p><b>Audio Samples for CML-TTS German</b></p>
+   <tr>
+        <td rowspan="3">4482</td>
+        <td><audio controls style="width: 220px;" src="audios_demo/french/4482/4482_3103_000028_ground_truth.wav"></audio></td>
+        <td><audio controls style="width: 220px;" src="audios_demo/french/4482/4482_3103_000028_yourtts.wav"></audio></td>
+    </tr>
+    <tr>
+        <td><audio controls style="width: 220px;" src="audios_demo/french/4482/4482_3103_000080_ground_truth.wav"></audio></td>
+        <td><audio controls style="width: 220px;" src="audios_demo/french/4482/4482_3103_000080_yourtts.wav"></audio></td>
+    </tr>
+    <tr>
+        <td><audio controls style="width: 220px;" src="audios_demo/french/4482/4482_3103_000093_ground_truth.wav"></audio></td>
+        <td><audio controls style="width: 220px;" src="audios_demo/french/4482/4482_3103_000093_yourtts.wav"></audio></td>
+    </tr>    
 
-            <table border="1">
-                <tr>
-                    <td>Speaker</td>
-                    <td>Ground Truth</td>
-                    <td>YourTTS</td>
-                </tr>
-
-                <tr >
-                    <td rowspan="3">135</td>
-                    <td><audio controls style="width: 220px;" src="/home/fred/Projetos/CML-TTS-Dataset/audios_demo/german/135/135_82_000015_ground_truth.wav"></audio></td>
-                    <td><audio controls style="width: 220px;" src="/home/fred/Projetos/CML-TTS-Dataset/audios_demo/german/135/135_82_000015_yourtts.wav"></audio></td>
-                </tr>
-                <tr>
-                    <td><audio controls style="width: 220px;" src="/home/fred/Projetos/CML-TTS-Dataset/audios_demo/german/135/135_82_000049_ground_truth.wav"></audio></td>
-                    <td><audio controls style="width: 220px;" src="/home/fred/Projetos/CML-TTS-Dataset/audios_demo/german/135/135_82_000049_yourtts.wav"></audio></td>
-                </tr>
-                <tr>
-                    <td><audio controls style="width: 220px;" src="/home/fred/Projetos/CML-TTS-Dataset/audios_demo/german/135/135_82_000115_ground_truth.wav"></audio></td>
-                    <td><audio controls style="width: 220px;" src="/home/fred/Projetos/CML-TTS-Dataset/audios_demo/german/135/135_82_000115_yourtts.wav"></audio></td>
-                </tr>   
-              
-               <tr >
-                    <td rowspan="3">3363</td>
-                    <td><audio controls style="width: 220px;" src="/home/fred/Projetos/CML-TTS-Dataset/audios_demo/german/3363/3363_2124_000036_ground_truth.wav"></audio></td>
-                    <td><audio controls style="width: 220px;" src="/home/fred/Projetos/CML-TTS-Dataset/audios_demo/german/3363/3363_2124_000036_yourtts.wav"></audio></td>
-                </tr>
-                <tr>
-                    <td><audio controls style="width: 220px;" src="/home/fred/Projetos/CML-TTS-Dataset/audios_demo/german/3363/3363_2124_000058_ground_truth.wav"></audio></td>
-                    <td><audio controls style="width: 220px;" src="/home/fred/Projetos/CML-TTS-Dataset/audios_demo/german/3363/3363_2124_000058_yourtts.wav"></audio></td>
-                </tr>
-                <tr>
-                    <td><audio controls style="width: 220px;" src="/home/fred/Projetos/CML-TTS-Dataset/audios_demo/german/3363/3363_2124_000076_ground_truth.wav"></audio></td>
-                    <td><audio controls style="width: 220px;" src="/home/fred/Projetos/CML-TTS-Dataset/audios_demo/german/3363/3363_2124_000076_yourtts.wav"></audio></td>
-                </tr>  
-
-               <tr >
-                    <td rowspan="3">7120</td>
-                    <td><audio controls style="width: 220px;" src="/home/fred/Projetos/CML-TTS-Dataset/audios_demo/german/7120/7120_5144_000045_ground_truth.wav"></audio></td>
-                    <td><audio controls style="width: 220px;" src="/home/fred/Projetos/CML-TTS-Dataset/audios_demo/german/7120/7120_5144_000045_yourtts.wav"></audio></td>
-                </tr>
-                <tr>
-                    <td><audio controls style="width: 220px;" src="/home/fred/Projetos/CML-TTS-Dataset/audios_demo/german/7120/7120_5144_000071_ground_truth.wav"></audio></td>
-                    <td><audio controls style="width: 220px;" src="/home/fred/Projetos/CML-TTS-Dataset/audios_demo/german/7120/7120_5144_000071_yourtts.wav"></audio></td>
-                </tr>
-                <tr>
-                    <td><audio controls style="width: 220px;" src="/home/fred/Projetos/CML-TTS-Dataset/audios_demo/german/7120/7120_5144_000076_ground_truth.wav"></audio></td>
-                    <td><audio controls style="width: 220px;" src="/home/fred/Projetos/CML-TTS-Dataset/audios_demo/german/7120/7120_5144_000076_yourtts.wav"></audio></td>
-                </tr>    
-
-               <tr >
-                    <td rowspan="3">9494</td>
-                    <td><audio controls style="width: 220px;" src="/home/fred/Projetos/CML-TTS-Dataset/audios_demo/german/9494/9494_8747_000084_ground_truth.wav"></audio></td>
-                    <td><audio controls style="width: 220px;" src="/home/fred/Projetos/CML-TTS-Dataset/audios_demo/german/9494/9494_8747_000084_yourtts.wav"></audio></td>
-                </tr>
-                <tr>
-                    <td><audio controls style="width: 220px;" src="/home/fred/Projetos/CML-TTS-Dataset/audios_demo/german/9494/9494_8747_000108_ground_truth.wav"></audio></td>
-                    <td><audio controls style="width: 220px;" src="/home/fred/Projetos/CML-TTS-Dataset/audios_demo/german/9494/9494_8747_000108_yourtts.wav"></audio></td>
-                </tr>
-                <tr>
-                    <td><audio controls style="width: 220px;" src="/home/fred/Projetos/CML-TTS-Dataset/audios_demo/german/9494/9494_8747_000003_ground_truth.wav"></audio></td>
-                    <td><audio controls style="width: 220px;" src="/home/fred/Projetos/CML-TTS-Dataset/audios_demo/german/9494/9494_8747_000003_yourtts.wav"></audio></td>
-                </tr>                
-            </table>
-
-
-        <h3>Italian Samples</h2>
-
-            <p><b>Audio Samples for CML-TTS Italian</b></p>
-
-            <table border="1">
-                <tr>
-                    <td>Speaker</td>
-                    <td>Ground Truth</td>
-                    <td>YourTTS</td>
-                </tr>
-
-                <tr >
-                    <td rowspan="3">4712</td>
-                    <td><audio controls style="width: 220px;" src="/home/fred/Projetos/CML-TTS-Dataset/audios_demo/italian/4712/4712_5281_000029-0001_ground_truth.wav"></audio></td>
-                    <td><audio controls style="width: 220px;" src="/home/fred/Projetos/CML-TTS-Dataset/audios_demo/italian/4712/4712_5281_000029-0001_yourtts.wav"></audio></td>
-                </tr>
-                <tr>
-                    <td><audio controls style="width: 220px;" src="/home/fred/Projetos/CML-TTS-Dataset/audios_demo/italian/4712/4712_5281_000057_ground_truth.wav"></audio></td>
-                    <td><audio controls style="width: 220px;" src="/home/fred/Projetos/CML-TTS-Dataset/audios_demo/italian/4712/4712_5281_000057_yourtts.wav"></audio></td>
-                </tr>
-                <tr>
-                    <td><audio controls style="width: 220px;" src="/home/fred/Projetos/CML-TTS-Dataset/audios_demo/italian/4712/4712_5281_000075_ground_truth.wav"></audio></td>
-                    <td><audio controls style="width: 220px;" src="/home/fred/Projetos/CML-TTS-Dataset/audios_demo/italian/4712/4712_5281_000075_yourtts.wav"></audio></td>
-                </tr>   
-              
-               <tr >
-                    <td rowspan="3">6698</td>
-                    <td><audio controls style="width: 220px;" src="/home/fred/Projetos/CML-TTS-Dataset/audios_demo/italian/6698/6698_5281_000022_ground_truth.wav"></audio></td>
-                    <td><audio controls style="width: 220px;" src="/home/fred/Projetos/CML-TTS-Dataset/audios_demo/italian/6698/6698_5281_000022_yourtts.wav"></audio></td>
-                </tr>
-                <tr>
-                    <td><audio controls style="width: 220px;" src="/home/fred/Projetos/CML-TTS-Dataset/audios_demo/italian/6698/6698_5281_000133_ground_truth.wav"></audio></td>
-                    <td><audio controls style="width: 220px;" src="/home/fred/Projetos/CML-TTS-Dataset/audios_demo/italian/6698/6698_5281_000133_yourtts.wav"></audio></td>
-                </tr>
-                <tr>
-                    <td><audio controls style="width: 220px;" src="/home/fred/Projetos/CML-TTS-Dataset/audios_demo/italian/6698/6698_5281_000136_ground_truth.wav"></audio></td>
-                    <td><audio controls style="width: 220px;" src="/home/fred/Projetos/CML-TTS-Dataset/audios_demo/italian/6698/6698_5281_000136_yourtts.wav"></audio></td>
-                </tr>  
-
-               <tr >
-                    <td rowspan="3">7458</td>
-                    <td><audio controls style="width: 220px;" src="/home/fred/Projetos/CML-TTS-Dataset/audios_demo/italian/7458/7458_6589_000030_ground_truth.wav"></audio></td>
-                    <td><audio controls style="width: 220px;" src="/home/fred/Projetos/CML-TTS-Dataset/audios_demo/italian/7458/7458_6589_000030_yourtts.wav"></audio></td>
-                </tr>
-                <tr>
-                    <td><audio controls style="width: 220px;" src="/home/fred/Projetos/CML-TTS-Dataset/audios_demo/italian/7458/7458_6589_000105_ground_truth.wav"></audio></td>
-                    <td><audio controls style="width: 220px;" src="/home/fred/Projetos/CML-TTS-Dataset/audios_demo/italian/7458/7458_6589_000105_yourtts.wav"></audio></td>
-                </tr>
-                <tr>
-                    <td><audio controls style="width: 220px;" src="/home/fred/Projetos/CML-TTS-Dataset/audios_demo/italian/7458/7458_6589_000132_ground_truth.wav"></audio></td>
-                    <td><audio controls style="width: 220px;" src="/home/fred/Projetos/CML-TTS-Dataset/audios_demo/italian/7458/7458_6589_000132_yourtts.wav"></audio></td>
-                </tr>    
-
-               <tr >
-                    <td rowspan="3">8582</td>
-                    <td><audio controls style="width: 220px;" src="/home/fred/Projetos/CML-TTS-Dataset/audios_demo/italian/8582/8582_7877_000022_ground_truth.wav"></audio></td>
-                    <td><audio controls style="width: 220px;" src="/home/fred/Projetos/CML-TTS-Dataset/audios_demo/italian/8582/8582_7877_000022_yourtts.wav"></audio></td>
-                </tr>
-                <tr>
-                    <td><audio controls style="width: 220px;" src="/home/fred/Projetos/CML-TTS-Dataset/audios_demo/italian/8582/8582_8842_000027_ground_truth.wav"></audio></td>
-                    <td><audio controls style="width: 220px;" src="/home/fred/Projetos/CML-TTS-Dataset/audios_demo/italian/8582/8582_8842_000027_yourtts.wav"></audio></td>
-                </tr>
-                <tr>
-                    <td><audio controls style="width: 220px;" src="/home/fred/Projetos/CML-TTS-Dataset/audios_demo/italian/8582/8582_8842_000054_ground_truth.wav"></audio></td>
-                    <td><audio controls style="width: 220px;" src="/home/fred/Projetos/CML-TTS-Dataset/audios_demo/italian/8582/8582_8842_000054_yourtts.wav"></audio></td>
-                </tr>                
-            </table>
+   <tr>
+        <td rowspan="3">7400</td>
+        <td><audio controls style="width: 220px;" src="audios_demo/french/7400/7400_2928_000008_ground_truth.wav"></audio></td>
+        <td><audio controls style="width: 220px;" src="audios_demo/french/7400/7400_2928_000008_yourtts.wav"></audio></td>
+    </tr>
+    <tr>
+        <td><audio controls style="width: 220px;" src="audios_demo/french/7400/7400_2928_000049_ground_truth.wav"></audio></td>
+        <td><audio controls style="width: 220px;" src="audios_demo/french/7400/7400_2928_000049_yourtts.wav"></audio></td>
+    </tr>
+    <tr>
+        <td><audio controls style="width: 220px;" src="audios_demo/french/7400/7400_2928_000108_ground_truth.wav"></audio></td>
+        <td><audio controls style="width: 220px;" src="audios_demo/french/7400/7400_2928_000108_yourtts.wav"></audio></td>
+    </tr>                
+</table>
 
 
-        <h3>Polish Samples</h2>
+<h3 style="text-align:center;">German Samples</h3>
+<p style="text-align:center;"><b>Audio Samples for CML-TTS German</b></p>
+<table style="margin:0 auto;">
+    <thead>
+        <tr>
+            <th>Speaker</th>
+            <th>Ground Truth</th>
+            <th>YourTTS</th>
+        </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td rowspan="3">135</td>
+        <td><audio controls style="width: 220px;" src="audios_demo/german/135/135_82_000015_ground_truth.wav"></audio></td>
+        <td><audio controls style="width: 220px;" src="audios_demo/german/135/135_82_000015_yourtts.wav"></audio></td>
+    </tr>
+    <tr>
+        <td><audio controls style="width: 220px;" src="audios_demo/german/135/135_82_000049_ground_truth.wav"></audio></td>
+        <td><audio controls style="width: 220px;" src="audios_demo/german/135/135_82_000049_yourtts.wav"></audio></td>
+    </tr>
+    <tr>
+        <td><audio controls style="width: 220px;" src="audios_demo/german/135/135_82_000115_ground_truth.wav"></audio></td>
+        <td><audio controls style="width: 220px;" src="audios_demo/german/135/135_82_000115_yourtts.wav"></audio></td>
+    </tr>   
+  
+   <tr>
+        <td rowspan="3">3363</td>
+        <td><audio controls style="width: 220px;" src="audios_demo/german/3363/3363_2124_000036_ground_truth.wav"></audio></td>
+        <td><audio controls style="width: 220px;" src="audios_demo/german/3363/3363_2124_000036_yourtts.wav"></audio></td>
+    </tr>
+    <tr>
+        <td><audio controls style="width: 220px;" src="audios_demo/german/3363/3363_2124_000058_ground_truth.wav"></audio></td>
+        <td><audio controls style="width: 220px;" src="audios_demo/german/3363/3363_2124_000058_yourtts.wav"></audio></td>
+    </tr>
+    <tr>
+        <td><audio controls style="width: 220px;" src="audios_demo/german/3363/3363_2124_000076_ground_truth.wav"></audio></td>
+        <td><audio controls style="width: 220px;" src="audios_demo/german/3363/3363_2124_000076_yourtts.wav"></audio></td>
+    </tr>  
 
-            <p><b>Audio Samples for CML-TTS Polish</b></p>
+   <tr>
+        <td rowspan="3">7120</td>
+        <td><audio controls style="width: 220px;" src="audios_demo/german/7120/7120_5144_000045_ground_truth.wav"></audio></td>
+        <td><audio controls style="width: 220px;" src="audios_demo/german/7120/7120_5144_000045_yourtts.wav"></audio></td>
+    </tr>
+    <tr>
+        <td><audio controls style="width: 220px;" src="audios_demo/german/7120/7120_5144_000071_ground_truth.wav"></audio></td>
+        <td><audio controls style="width: 220px;" src="audios_demo/german/7120/7120_5144_000071_yourtts.wav"></audio></td>
+    </tr>
+    <tr>
+        <td><audio controls style="width: 220px;" src="audios_demo/german/7120/7120_5144_000076_ground_truth.wav"></audio></td>
+        <td><audio controls style="width: 220px;" src="audios_demo/german/7120/7120_5144_000076_yourtts.wav"></audio></td>
+    </tr>    
 
-            <table border="1">
-                <tr>
-                    <td>Speaker</td>
-                    <td>Ground Truth</td>
-                    <td>YourTTS</td>
-                </tr>
-
-                <tr >
-                    <td rowspan="3">1889</td>
-                    <td><audio controls style="width: 220px;" src="/home/fred/Projetos/CML-TTS-Dataset/audios_demo/polish/1889/1889_1447_000009-0002_ground_truth.wav"></audio></td>
-                    <td><audio controls style="width: 220px;" src="/home/fred/Projetos/CML-TTS-Dataset/audios_demo/polish/1889/1889_1447_000009-0002_yourtts.wav"></audio></td>
-                </tr>
-                <tr>
-                    <td><audio controls style="width: 220px;" src="/home/fred/Projetos/CML-TTS-Dataset/audios_demo/polish/1889/1889_1447_000036_ground_truth.wav"></audio></td>
-                    <td><audio controls style="width: 220px;" src="/home/fred/Projetos/CML-TTS-Dataset/audios_demo/polish/1889/1889_1447_000036_yourtts.wav"></audio></td>
-                </tr>
-                <tr>
-                    <td><audio controls style="width: 220px;" src="/home/fred/Projetos/CML-TTS-Dataset/audios_demo/polish/1889/1889_1447_000111_ground_truth.wav"></audio></td>
-                    <td><audio controls style="width: 220px;" src="/home/fred/Projetos/CML-TTS-Dataset/audios_demo/polish/1889/1889_1447_000111_yourtts.wav"></audio></td>
-                </tr>   
-              
-               <tr >
-                    <td rowspan="3">7775</td>
-                    <td><audio controls style="width: 220px;" src="/home/fred/Projetos/CML-TTS-Dataset/audios_demo/polish/7775/7775_5541_000004-0001_ground_truth.wav"></audio></td>
-                    <td><audio controls style="width: 220px;" src="/home/fred/Projetos/CML-TTS-Dataset/audios_demo/polish/7775/7775_5541_000004-0001_yourtts.wav"></audio></td>
-                </tr>
-                <tr>
-                    <td><audio controls style="width: 220px;" src="/home/fred/Projetos/CML-TTS-Dataset/audios_demo/polish/7775/7775_5541_000050_ground_truth.wav"></audio></td>
-                    <td><audio controls style="width: 220px;" src="/home/fred/Projetos/CML-TTS-Dataset/audios_demo/polish/7775/7775_5541_000050_yourtts.wav"></audio></td>
-                </tr>
-                <tr>
-                    <td><audio controls style="width: 220px;" src="/home/fred/Projetos/CML-TTS-Dataset/audios_demo/polish/7775/7775_5541_000110_ground_truth.wav"></audio></td>
-                    <td><audio controls style="width: 220px;" src="/home/fred/Projetos/CML-TTS-Dataset/audios_demo/polish/7775/7775_5541_000110_yourtts.wav"></audio></td>
-                </tr>  
-
-               <tr >
-                    <td rowspan="3">8758</td>
-                    <td><audio controls style="width: 220px;" src="/home/fred/Projetos/CML-TTS-Dataset/audios_demo/polish/8758/8758_8338_000025_ground_truth.wav"></audio></td>
-                    <td><audio controls style="width: 220px;" src="/home/fred/Projetos/CML-TTS-Dataset/audios_demo/polish/8758/8758_8338_000025_yourtts.wav"></audio></td>
-                </tr>
-                <tr>
-                    <td><audio controls style="width: 220px;" src="/home/fred/Projetos/CML-TTS-Dataset/audios_demo/polish/8758/8758_8338_000052_ground_truth.wav"></audio></td>
-                    <td><audio controls style="width: 220px;" src="/home/fred/Projetos/CML-TTS-Dataset/audios_demo/polish/8758/8758_8338_000052_yourtts.wav"></audio></td>
-                </tr>
-                <tr>
-                    <td><audio controls style="width: 220px;" src="/home/fred/Projetos/CML-TTS-Dataset/audios_demo/polish/8758/8758_8338_000119-0001_ground_truth.wav"></audio></td>
-                    <td><audio controls style="width: 220px;" src="/home/fred/Projetos/CML-TTS-Dataset/audios_demo/polish/8758/8758_8338_000119-0001_yourtts.wav"></audio></td>
-                </tr>    
-
-               <tr>
-                    <td rowspan="3">11295</td>
-                    <td><audio controls style="width: 220px;" src="/home/fred/Projetos/CML-TTS-Dataset/audios_demo/polish/11295/11295_11059_000009_ground_truth.wav"></audio></td>
-                    <td><audio controls style="width: 220px;" src="/home/fred/Projetos/CML-TTS-Dataset/audios_demo/polish/11295/11295_11059_000009_yourtts.wav"></audio></td>
-                </tr>
-                <tr>
-                    <td><audio controls style="width: 220px;" src="/home/fred/Projetos/CML-TTS-Dataset/audios_demo/polish/11295/11295_11059_000051_ground_truth.wav"></audio></td>
-                    <td><audio controls style="width: 220px;" src="/home/fred/Projetos/CML-TTS-Dataset/audios_demo/polish/11295/11295_11059_000051_yourtts.wav"></audio></td>
-                </tr>
-                <tr>
-                    <td><audio controls style="width: 220px;" src="/home/fred/Projetos/CML-TTS-Dataset/audios_demo/polish/11295/11295_11059_000072-0003_ground_truth.wav"></audio></td>
-                    <td><audio controls style="width: 220px;" src="/home/fred/Projetos/CML-TTS-Dataset/audios_demo/polish/11295/11295_11059_000072-0003_yourtts.wav"></audio></td>
-                </tr>                
-            </table>
-
-
-        <h3>Portuguese Samples</h2>
-
-            <p><b>Audio Samples for CML-TTS Portuguese</b></p>
-
-            <table border="1">
-                <tr>
-                    <td>Speaker</td>
-                    <td>Ground Truth</td>
-                    <td>YourTTS</td>
-                </tr>
-
-                <tr >
-                    <td rowspan="3">4067</td>
-                    <td><audio controls style="width: 220px;" src="/home/fred/Projetos/CML-TTS-Dataset/audios_demo/portuguese/4067/4067_3313_000002_ground_truth.wav"></audio></td>
-                    <td><audio controls style="width: 220px;" src="/home/fred/Projetos/CML-TTS-Dataset/audios_demo/portuguese/4067/4067_3313_000002_yourtts.wav"></audio></td>
-                </tr>
-                <tr>
-                    <td><audio controls style="width: 220px;" src="/home/fred/Projetos/CML-TTS-Dataset/audios_demo/portuguese/4067/4067_3313_000033_ground_truth.wav"></audio></td>
-                    <td><audio controls style="width: 220px;" src="/home/fred/Projetos/CML-TTS-Dataset/audios_demo/portuguese/4067/4067_3313_000033_yourtts.wav"></audio></td>
-                </tr>
-                <tr>
-                    <td><audio controls style="width: 220px;" src="/home/fred/Projetos/CML-TTS-Dataset/audios_demo/portuguese/4067/4067_3313_000088_ground_truth.wav"></audio></td>
-                    <td><audio controls style="width: 220px;" src="/home/fred/Projetos/CML-TTS-Dataset/audios_demo/portuguese/4067/4067_3313_000088_yourtts.wav"></audio></td>
-                </tr>   
-              
-               <tr >
-                    <td rowspan="3">6549</td>
-                    <td><audio controls style="width: 220px;" src="/home/fred/Projetos/CML-TTS-Dataset/audios_demo/portuguese/6549/6549_4739_000010-0002_ground_truth.wav"></audio></td>
-                    <td><audio controls style="width: 220px;" src="/home/fred/Projetos/CML-TTS-Dataset/audios_demo/portuguese/6549/6549_4739_000010-0002_yourtts.wav"></audio></td>
-                </tr>
-                <tr>
-                    <td><audio controls style="width: 220px;" src="/home/fred/Projetos/CML-TTS-Dataset/audios_demo/portuguese/6549/6549_4739_000013_ground_truth.wav"></audio></td>
-                    <td><audio controls style="width: 220px;" src="/home/fred/Projetos/CML-TTS-Dataset/audios_demo/portuguese/6549/6549_4739_000013_yourtts.wav"></audio></td>
-                </tr>
-                <tr>
-                    <td><audio controls style="width: 220px;" src="/home/fred/Projetos/CML-TTS-Dataset/audios_demo/portuguese/6549/6549_13511_000039-0002_ground_truth.wav"></audio></td>
-                    <td><audio controls style="width: 220px;" src="/home/fred/Projetos/CML-TTS-Dataset/audios_demo/portuguese/6549/6549_13511_000039-0002_yourtts.wav"></audio></td>
-                </tr>  
-
-               <tr >
-                    <td rowspan="3">11247</td>
-                    <td><audio controls style="width: 220px;" src="/home/fred/Projetos/CML-TTS-Dataset/audios_demo/portuguese/11247/11247_10229_000015-0001_ground_truth.wav"></audio></td>
-                    <td><audio controls style="width: 220px;" src="/home/fred/Projetos/CML-TTS-Dataset/audios_demo/portuguese/11247/11247_10229_000015-0001_yourtts.wav"></audio></td>
-                </tr>
-                <tr>
-                    <td><audio controls style="width: 220px;" src="/home/fred/Projetos/CML-TTS-Dataset/audios_demo/portuguese/11247/11247_10229_000033-0001_ground_truth.wav"></audio></td>
-                    <td><audio controls style="width: 220px;" src="/home/fred/Projetos/CML-TTS-Dataset/audios_demo/portuguese/11247/11247_10229_000033-0001_yourtts.wav"></audio></td>
-                </tr>
-                <tr>
-                    <td><audio controls style="width: 220px;" src="/home/fred/Projetos/CML-TTS-Dataset/audios_demo/portuguese/11247/11247_10229_000048_ground_truth.wav"></audio></td>
-                    <td><audio controls style="width: 220px;" src="/home/fred/Projetos/CML-TTS-Dataset/audios_demo/portuguese/11247/11247_10229_000048_yourtts.wav"></audio></td>
-                </tr>    
-
-               <tr >
-                    <td rowspan="3">12710</td>
-                    <td><audio controls style="width: 220px;" src="/home/fred/Projetos/CML-TTS-Dataset/audios_demo/portuguese/12710/12710_10229_000007-0001_ground_truth.wav"></audio></td>
-                    <td><audio controls style="width: 220px;" src="/home/fred/Projetos/CML-TTS-Dataset/audios_demo/portuguese/12710/12710_10229_000007-0001_yourtts.wav"></audio></td>
-                </tr>
-                <tr>
-                    <td><audio controls style="width: 220px;" src="/home/fred/Projetos/CML-TTS-Dataset/audios_demo/portuguese/12710/12710_10229_000047_ground_truth.wav"></audio></td>
-                    <td><audio controls style="width: 220px;" src="/home/fred/Projetos/CML-TTS-Dataset/audios_demo/portuguese/12710/12710_10229_000047_yourtts.wav"></audio></td>
-                </tr>
-                <tr>
-                    <td><audio controls style="width: 220px;" src="/home/fred/Projetos/CML-TTS-Dataset/audios_demo/portuguese/12710/12710_10229_000052-0001_ground_truth.wav"></audio></td>
-                    <td><audio controls style="width: 220px;" src="/home/fred/Projetos/CML-TTS-Dataset/audios_demo/portuguese/12710/12710_10229_000052-0001_yourtts.wav"></audio></td>
-                </tr>                
-            </table>
+   <tr>
+        <td rowspan="3">9494</td>
+        <td><audio controls style="width: 220px;" src="audios_demo/german/9494/9494_8747_000084_ground_truth.wav"></audio></td>
+        <td><audio controls style="width: 220px;" src="audios_demo/german/9494/9494_8747_000084_yourtts.wav"></audio></td>
+    </tr>
+    <tr>
+        <td><audio controls style="width: 220px;" src="audios_demo/german/9494/9494_8747_000108_ground_truth.wav"></audio></td>
+        <td><audio controls style="width: 220px;" src="audios_demo/german/9494/9494_8747_000108_yourtts.wav"></audio></td>
+    </tr>
+    <tr>
+        <td><audio controls style="width: 220px;" src="audios_demo/german/9494/9494_8747_000003_ground_truth.wav"></audio></td>
+        <td><audio controls style="width: 220px;" src="audios_demo/german/9494/9494_8747_000003_yourtts.wav"></audio></td>
+    </tr>                
+</table>
 
 
-        <h3>Spanish Samples</h2>
+<h3 style="text-align:center;">Italian Samples</h3>
+<p style="text-align:center;"><b>Audio Samples for CML-TTS Italian</b></p>
+<table style="margin:0 auto;">
+    <thead>
+        <tr>
+            <th>Speaker</th>
+            <th>Ground Truth</th>
+            <th>YourTTS</th>
+        </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td rowspan="3">4712</td>
+        <td><audio controls style="width: 220px;" src="audios_demo/italian/4712/4712_5281_000029-0001_ground_truth.wav"></audio></td>
+        <td><audio controls style="width: 220px;" src="audios_demo/italian/4712/4712_5281_000029-0001_yourtts.wav"></audio></td>
+    </tr>
+    <tr>
+        <td><audio controls style="width: 220px;" src="audios_demo/italian/4712/4712_5281_000057_ground_truth.wav"></audio></td>
+        <td><audio controls style="width: 220px;" src="audios_demo/italian/4712/4712_5281_000057_yourtts.wav"></audio></td>
+    </tr>
+    <tr>
+        <td><audio controls style="width: 220px;" src="audios_demo/italian/4712/4712_5281_000075_ground_truth.wav"></audio></td>
+        <td><audio controls style="width: 220px;" src="audios_demo/italian/4712/4712_5281_000075_yourtts.wav"></audio></td>
+    </tr>   
+  
+   <tr>
+        <td rowspan="3">6698</td>
+        <td><audio controls style="width: 220px;" src="audios_demo/italian/6698/6698_5281_000022_ground_truth.wav"></audio></td>
+        <td><audio controls style="width: 220px;" src="audios_demo/italian/6698/6698_5281_000022_yourtts.wav"></audio></td>
+    </tr>
+    <tr>
+        <td><audio controls style="width: 220px;" src="audios_demo/italian/6698/6698_5281_000133_ground_truth.wav"></audio></td>
+        <td><audio controls style="width: 220px;" src="audios_demo/italian/6698/6698_5281_000133_yourtts.wav"></audio></td>
+    </tr>
+    <tr>
+        <td><audio controls style="width: 220px;" src="audios_demo/italian/6698/6698_5281_000136_ground_truth.wav"></audio></td>
+        <td><audio controls style="width: 220px;" src="audios_demo/italian/6698/6698_5281_000136_yourtts.wav"></audio></td>
+    </tr>  
 
-            <p><b>Audio Samples for CML-TTS Spanish</b></p>
+   <tr>
+        <td rowspan="3">7458</td>
+        <td><audio controls style="width: 220px;" src="audios_demo/italian/7458/7458_6589_000030_ground_truth.wav"></audio></td>
+        <td><audio controls style="width: 220px;" src="audios_demo/italian/7458/7458_6589_000030_yourtts.wav"></audio></td>
+    </tr>
+    <tr>
+        <td><audio controls style="width: 220px;" src="audios_demo/italian/7458/7458_6589_000105_ground_truth.wav"></audio></td>
+        <td><audio controls style="width: 220px;" src="audios_demo/italian/7458/7458_6589_000105_yourtts.wav"></audio></td>
+    </tr>
+    <tr>
+        <td><audio controls style="width: 220px;" src="audios_demo/italian/7458/7458_6589_000132_ground_truth.wav"></audio></td>
+        <td><audio controls style="width: 220px;" src="audios_demo/italian/7458/7458_6589_000132_yourtts.wav"></audio></td>
+    </tr>    
 
-            <table border="1">
-                <tr>
-                    <td>Speaker</td>
-                    <td>Ground Truth</td>
-                    <td>YourTTS</td>
-                </tr>
+   <tr>
+        <td rowspan="3">8582</td>
+        <td><audio controls style="width: 220px;" src="audios_demo/italian/8582/8582_7877_000022_ground_truth.wav"></audio></td>
+        <td><audio controls style="width: 220px;" src="audios_demo/italian/8582/8582_7877_000022_yourtts.wav"></audio></td>
+    </tr>
+    <tr>
+        <td><audio controls style="width: 220px;" src="audios_demo/italian/8582/8582_8842_000027_ground_truth.wav"></audio></td>
+        <td><audio controls style="width: 220px;" src="audios_demo/italian/8582/8582_8842_000027_yourtts.wav"></audio></td>
+    </tr>
+    <tr>
+        <td><audio controls style="width: 220px;" src="audios_demo/italian/8582/8582_8842_000054_ground_truth.wav"></audio></td>
+        <td><audio controls style="width: 220px;" src="audios_demo/italian/8582/8582_8842_000054_yourtts.wav"></audio></td>
+    </tr>                
+</table>
 
-                <tr >
-                    <td rowspan="3">1075</td>
-                    <td><audio controls style="width: 220px;" src="/home/fred/Projetos/CML-TTS-Dataset/audios_demo/spanish/1075/1075_567_000003_ground_truth.wav"></audio></td>
-                    <td><audio controls style="width: 220px;" src="/home/fred/Projetos/CML-TTS-Dataset/audios_demo/spanish/1075/1075_567_000003_yourtts.wav"></audio></td>
-                </tr>
-                <tr>
-                    <td><audio controls style="width: 220px;" src="/home/fred/Projetos/CML-TTS-Dataset/audios_demo/spanish/1075/1075_567_000007_ground_truth.wav"></audio></td>
-                    <td><audio controls style="width: 220px;" src="/home/fred/Projetos/CML-TTS-Dataset/audios_demo/spanish/1075/1075_567_000007_yourtts.wav"></audio></td>
-                </tr>
-                <tr>
-                    <td><audio controls style="width: 220px;" src="/home/fred/Projetos/CML-TTS-Dataset/audios_demo/spanish/1075/1075_567_000113_ground_truth.wav"></audio></td>
-                    <td><audio controls style="width: 220px;" src="/home/fred/Projetos/CML-TTS-Dataset/audios_demo/spanish/1075/1075_567_000113_yourtts.wav"></audio></td>
-                </tr>   
-              
-               <tr >
-                    <td rowspan="3">3503</td>
-                    <td><audio controls style="width: 220px;" src="/home/fred/Projetos/CML-TTS-Dataset/audios_demo/spanish/3503/3503_2162_000034_ground_truth.wav"></audio></td>
-                    <td><audio controls style="width: 220px;" src="/home/fred/Projetos/CML-TTS-Dataset/audios_demo/spanish/3503/3503_2162_000034_yourtts.wav"></audio></td>
-                </tr>
-                <tr>
-                    <td><audio controls style="width: 220px;" src="/home/fred/Projetos/CML-TTS-Dataset/audios_demo/spanish/3503/3503_2162_000095_ground_truth.wav"></audio></td>
-                    <td><audio controls style="width: 220px;" src="/home/fred/Projetos/CML-TTS-Dataset/audios_demo/spanish/3503/3503_2162_000095_yourtts.wav"></audio></td>
-                </tr>
-                <tr>
-                    <td><audio controls style="width: 220px;" src="/home/fred/Projetos/CML-TTS-Dataset/audios_demo/spanish/3503/3503_2162_000104_ground_truth.wav"></audio></td>
-                    <td><audio controls style="width: 220px;" src="/home/fred/Projetos/CML-TTS-Dataset/audios_demo/spanish/3503/3503_2162_000104_yourtts.wav"></audio></td>
-                </tr>  
 
-               <tr >
-                    <td rowspan="3">5691</td>
-                    <td><audio controls style="width: 220px;" src="/home/fred/Projetos/CML-TTS-Dataset/audios_demo/spanish/5691/5691_4369_000031_ground_truth.wav"></audio></td>
-                    <td><audio controls style="width: 220px;" src="/home/fred/Projetos/CML-TTS-Dataset/audios_demo/spanish/5691/5691_4369_000031_yourtts.wav"></audio></td>
-                </tr>
-                <tr>
-                    <td><audio controls style="width: 220px;" src="/home/fred/Projetos/CML-TTS-Dataset/audios_demo/spanish/5691/5691_4369_000040_ground_truth.wav"></audio></td>
-                    <td><audio controls style="width: 220px;" src="/home/fred/Projetos/CML-TTS-Dataset/audios_demo/spanish/5691/5691_4369_000040_yourtts.wav"></audio></td>
-                </tr>
-                <tr>
-                    <td><audio controls style="width: 220px;" src="/home/fred/Projetos/CML-TTS-Dataset/audios_demo/spanish/5691/5691_4369_000077_ground_truth.wav"></audio></td>
-                    <td><audio controls style="width: 220px;" src="/home/fred/Projetos/CML-TTS-Dataset/audios_demo/spanish/5691/5691_4369_000077_yourtts.wav"></audio></td>
-                </tr>    
+<h3 style="text-align:center;">Polish Samples</h3>
+<p style="text-align:center;"><b>Audio Samples for CML-TTS Polish</b></p>
+<table style="margin:0 auto;">
+    <thead>
+        <tr>
+            <th>Speaker</th>
+            <th>Ground Truth</th>
+            <th>YourTTS</th>
+        </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td rowspan="3">1889</td>
+        <td><audio controls style="width: 220px;" src="audios_demo/polish/1889/1889_1447_000009-0002_ground_truth.wav"></audio></td>
+        <td><audio controls style="width: 220px;" src="audios_demo/polish/1889/1889_1447_000009-0002_yourtts.wav"></audio></td>
+    </tr>
+    <tr>
+        <td><audio controls style="width: 220px;" src="audios_demo/polish/1889/1889_1447_000036_ground_truth.wav"></audio></td>
+        <td><audio controls style="width: 220px;" src="audios_demo/polish/1889/1889_1447_000036_yourtts.wav"></audio></td>
+    </tr>
+    <tr>
+        <td><audio controls style="width: 220px;" src="audios_demo/polish/1889/1889_1447_000111_ground_truth.wav"></audio></td>
+        <td><audio controls style="width: 220px;" src="audios_demo/polish/1889/1889_1447_000111_yourtts.wav"></audio></td>
+    </tr>   
+  
+   <tr>
+        <td rowspan="3">7775</td>
+        <td><audio controls style="width: 220px;" src="audios_demo/polish/7775/7775_5541_000004-0001_ground_truth.wav"></audio></td>
+        <td><audio controls style="width: 220px;" src="audios_demo/polish/7775/7775_5541_000004-0001_yourtts.wav"></audio></td>
+    </tr>
+    <tr>
+        <td><audio controls style="width: 220px;" src="audios_demo/polish/7775/7775_5541_000050_ground_truth.wav"></audio></td>
+        <td><audio controls style="width: 220px;" src="audios_demo/polish/7775/7775_5541_000050_yourtts.wav"></audio></td>
+    </tr>
+    <tr>
+        <td><audio controls style="width: 220px;" src="audios_demo/polish/7775/7775_5541_000110_ground_truth.wav"></audio></td>
+        <td><audio controls style="width: 220px;" src="audios_demo/polish/7775/7775_5541_000110_yourtts.wav"></audio></td>
+    </tr>  
 
-               <tr >
-                    <td rowspan="3">7510</td>
-                    <td><audio controls style="width: 220px;" src="/home/fred/Projetos/CML-TTS-Dataset/audios_demo/spanish/7510/7510_7613_000006_ground_truth.wav"></audio></td>
-                    <td><audio controls style="width: 220px;" src="/home/fred/Projetos/CML-TTS-Dataset/audios_demo/spanish/7510/7510_7613_000006_yourtts.wav"></audio></td>
-                </tr>
-                <tr>
-                    <td><audio controls style="width: 220px;" src="/home/fred/Projetos/CML-TTS-Dataset/audios_demo/spanish/7510/7510_9951_000025_ground_truth.wav"></audio></td>
-                    <td><audio controls style="width: 220px;" src="/home/fred/Projetos/CML-TTS-Dataset/audios_demo/spanish/7510/7510_9951_000025_yourtts.wav"></audio></td>
-                </tr>
-                <tr>
-                    <td><audio controls style="width: 220px;" src="/home/fred/Projetos/CML-TTS-Dataset/audios_demo/spanish/7510/7510_9951_000081_ground_truth.wav"></audio></td>
-                    <td><audio controls style="width: 220px;" src="/home/fred/Projetos/CML-TTS-Dataset/audios_demo/spanish/7510/7510_9951_000081_yourtts.wav"></audio></td>
-                </tr>                
-            </table>
+   <tr>
+        <td rowspan="3">8758</td>
+        <td><audio controls style="width: 220px;" src="audios_demo/polish/8758/8758_8338_000025_ground_truth.wav"></audio></td>
+        <td><audio controls style="width: 220px;" src="audios_demo/polish/8758/8758_8338_000025_yourtts.wav"></audio></td>
+    </tr>
+    <tr>
+        <td><audio controls style="width: 220px;" src="audios_demo/polish/8758/8758_8338_000052_ground_truth.wav"></audio></td>
+        <td><audio controls style="width: 220px;" src="audios_demo/polish/8758/8758_8338_000052_yourtts.wav"></audio></td>
+    </tr>
+    <tr>
+        <td><audio controls style="width: 220px;" src="audios_demo/polish/8758/8758_8338_000119-0001_ground_truth.wav"></audio></td>
+        <td><audio controls style="width: 220px;" src="audios_demo/polish/8758/8758_8338_000119-0001_yourtts.wav"></audio></td>
+    </tr>    
 
-                <h3>Citation</h3>
-                <pre class="highlight">
+   <tr>
+        <td rowspan="3">11295</td>
+        <td><audio controls style="width: 220px;" src="audios_demo/polish/11295/11295_11059_000009_ground_truth.wav"></audio></td>
+        <td><audio controls style="width: 220px;" src="audios_demo/polish/11295/11295_11059_000009_yourtts.wav"></audio></td>
+    </tr>
+    <tr>
+        <td><audio controls style="width: 220px;" src="audios_demo/polish/11295/11295_11059_000051_ground_truth.wav"></audio></td>
+        <td><audio controls style="width: 220px;" src="audios_demo/polish/11295/11295_11059_000051_yourtts.wav"></audio></td>
+    </tr>
+    <tr>
+        <td><audio controls style="width: 220px;" src="audios_demo/polish/11295/11295_11059_000072-0003_ground_truth.wav"></audio></td>
+        <td><audio controls style="width: 220px;" src="audios_demo/polish/11295/11295_11059_000072-0003_yourtts.wav"></audio></td>
+    </tr>                
+</table>
+
+
+<h3 style="text-align:center;">Portuguese Samples</h3>
+<p style="text-align:center;"><b>Audio Samples for CML-TTS Portuguese</b></p>
+<table style="margin:0 auto;">
+    <thead>
+        <tr>
+            <th>Speaker</th>
+            <th>Ground Truth</th>
+            <th>YourTTS</th>
+        </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td rowspan="3">4067</td>
+        <td><audio controls style="width: 220px;" src="audios_demo/portuguese/4067/4067_3313_000002_ground_truth.wav"></audio></td>
+        <td><audio controls style="width: 220px;" src="audios_demo/portuguese/4067/4067_3313_000002_yourtts.wav"></audio></td>
+    </tr>
+    <tr>
+        <td><audio controls style="width: 220px;" src="audios_demo/portuguese/4067/4067_3313_000033_ground_truth.wav"></audio></td>
+        <td><audio controls style="width: 220px;" src="audios_demo/portuguese/4067/4067_3313_000033_yourtts.wav"></audio></td>
+    </tr>
+    <tr>
+        <td><audio controls style="width: 220px;" src="audios_demo/portuguese/4067/4067_3313_000088_ground_truth.wav"></audio></td>
+        <td><audio controls style="width: 220px;" src="audios_demo/portuguese/4067/4067_3313_000088_yourtts.wav"></audio></td>
+    </tr>   
+  
+   <tr>
+        <td rowspan="3">6549</td>
+        <td><audio controls style="width: 220px;" src="audios_demo/portuguese/6549/6549_4739_000010-0002_ground_truth.wav"></audio></td>
+        <td><audio controls style="width: 220px;" src="audios_demo/portuguese/6549/6549_4739_000010-0002_yourtts.wav"></audio></td>
+    </tr>
+    <tr>
+        <td><audio controls style="width: 220px;" src="audios_demo/portuguese/6549/6549_4739_000013_ground_truth.wav"></audio></td>
+        <td><audio controls style="width: 220px;" src="audios_demo/portuguese/6549/6549_4739_000013_yourtts.wav"></audio></td>
+    </tr>
+    <tr>
+        <td><audio controls style="width: 220px;" src="audios_demo/portuguese/6549/6549_13511_000039-0002_ground_truth.wav"></audio></td>
+        <td><audio controls style="width: 220px;" src="audios_demo/portuguese/6549/6549_13511_000039-0002_yourtts.wav"></audio></td>
+    </tr>  
+
+   <tr>
+        <td rowspan="3">11247</td>
+        <td><audio controls style="width: 220px;" src="audios_demo/portuguese/11247/11247_10229_000015-0001_ground_truth.wav"></audio></td>
+        <td><audio controls style="width: 220px;" src="audios_demo/portuguese/11247/11247_10229_000015-0001_yourtts.wav"></audio></td>
+    </tr>
+    <tr>
+        <td><audio controls style="width: 220px;" src="audios_demo/portuguese/11247/11247_10229_000033-0001_ground_truth.wav"></audio></td>
+        <td><audio controls style="width: 220px;" src="audios_demo/portuguese/11247/11247_10229_000033-0001_yourtts.wav"></audio></td>
+    </tr>
+    <tr>
+        <td><audio controls style="width: 220px;" src="audios_demo/portuguese/11247/11247_10229_000048_ground_truth.wav"></audio></td>
+        <td><audio controls style="width: 220px;" src="audios_demo/portuguese/11247/11247_10229_000048_yourtts.wav"></audio></td>
+    </tr>    
+
+   <tr>
+        <td rowspan="3">12710</td>
+        <td><audio controls style="width: 220px;" src="audios_demo/portuguese/12710/12710_10229_000007-0001_ground_truth.wav"></audio></td>
+        <td><audio controls style="width: 220px;" src="audios_demo/portuguese/12710/12710_10229_000007-0001_yourtts.wav"></audio></td>
+    </tr>
+    <tr>
+        <td><audio controls style="width: 220px;" src="audios_demo/portuguese/12710/12710_10229_000047_ground_truth.wav"></audio></td>
+        <td><audio controls style="width: 220px;" src="audios_demo/portuguese/12710/12710_10229_000047_yourtts.wav"></audio></td>
+    </tr>
+    <tr>
+        <td><audio controls style="width: 220px;" src="audios_demo/portuguese/12710/12710_10229_000052-0001_ground_truth.wav"></audio></td>
+        <td><audio controls style="width: 220px;" src="audios_demo/portuguese/12710/12710_10229_000052-0001_yourtts.wav"></audio></td>
+    </tr>                
+</table>
+
+
+<h3 style="text-align:center;">Spanish Samples</h3>
+<p style="text-align:center;"><b>Audio Samples for CML-TTS Portuguese</b></p>
+<table style="margin:0 auto;">
+    <thead>
+        <tr>
+            <th>Speaker</th>
+            <th>Ground Truth</th>
+            <th>YourTTS</th>
+        </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td rowspan="3">1075</td>
+        <td><audio controls style="width: 220px;" src="audios_demo/spanish/1075/1075_567_000003_ground_truth.wav"></audio></td>
+        <td><audio controls style="width: 220px;" src="audios_demo/spanish/1075/1075_567_000003_yourtts.wav"></audio></td>
+    </tr>
+    <tr>
+        <td><audio controls style="width: 220px;" src="audios_demo/spanish/1075/1075_567_000007_ground_truth.wav"></audio></td>
+        <td><audio controls style="width: 220px;" src="audios_demo/spanish/1075/1075_567_000007_yourtts.wav"></audio></td>
+    </tr>
+    <tr>
+        <td><audio controls style="width: 220px;" src="audios_demo/spanish/1075/1075_567_000113_ground_truth.wav"></audio></td>
+        <td><audio controls style="width: 220px;" src="audios_demo/spanish/1075/1075_567_000113_yourtts.wav"></audio></td>
+    </tr>   
+  
+   <tr>
+        <td rowspan="3">3503</td>
+        <td><audio controls style="width: 220px;" src="audios_demo/spanish/3503/3503_2162_000034_ground_truth.wav"></audio></td>
+        <td><audio controls style="width: 220px;" src="audios_demo/spanish/3503/3503_2162_000034_yourtts.wav"></audio></td>
+    </tr>
+    <tr>
+        <td><audio controls style="width: 220px;" src="audios_demo/spanish/3503/3503_2162_000095_ground_truth.wav"></audio></td>
+        <td><audio controls style="width: 220px;" src="audios_demo/spanish/3503/3503_2162_000095_yourtts.wav"></audio></td>
+    </tr>
+    <tr>
+        <td><audio controls style="width: 220px;" src="audios_demo/spanish/3503/3503_2162_000104_ground_truth.wav"></audio></td>
+        <td><audio controls style="width: 220px;" src="audios_demo/spanish/3503/3503_2162_000104_yourtts.wav"></audio></td>
+    </tr>  
+
+   <tr>
+        <td rowspan="3">5691</td>
+        <td><audio controls style="width: 220px;" src="audios_demo/spanish/5691/5691_4369_000031_ground_truth.wav"></audio></td>
+        <td><audio controls style="width: 220px;" src="audios_demo/spanish/5691/5691_4369_000031_yourtts.wav"></audio></td>
+    </tr>
+    <tr>
+        <td><audio controls style="width: 220px;" src="audios_demo/spanish/5691/5691_4369_000040_ground_truth.wav"></audio></td>
+        <td><audio controls style="width: 220px;" src="audios_demo/spanish/5691/5691_4369_000040_yourtts.wav"></audio></td>
+    </tr>
+    <tr>
+        <td><audio controls style="width: 220px;" src="audios_demo/spanish/5691/5691_4369_000077_ground_truth.wav"></audio></td>
+        <td><audio controls style="width: 220px;" src="audios_demo/spanish/5691/5691_4369_000077_yourtts.wav"></audio></td>
+    </tr>    
+
+   <tr>
+        <td rowspan="3">7510</td>
+        <td><audio controls style="width: 220px;" src="audios_demo/spanish/7510/7510_7613_000006_ground_truth.wav"></audio></td>
+        <td><audio controls style="width: 220px;" src="audios_demo/spanish/7510/7510_7613_000006_yourtts.wav"></audio></td>
+    </tr>
+    <tr>
+        <td><audio controls style="width: 220px;" src="audios_demo/spanish/7510/7510_9951_000025_ground_truth.wav"></audio></td>
+        <td><audio controls style="width: 220px;" src="audios_demo/spanish/7510/7510_9951_000025_yourtts.wav"></audio></td>
+    </tr>
+    <tr>
+        <td><audio controls style="width: 220px;" src="audios_demo/spanish/7510/7510_9951_000081_ground_truth.wav"></audio></td>
+        <td><audio controls style="width: 220px;" src="audios_demo/spanish/7510/7510_9951_000081_yourtts.wav"></audio></td>
+    </tr>                
+</table>
+
+<h3>Citation</h3>
+<pre class="highlight">
 @misc{Oliveira2023,
       author = "{Oliveira}, Frederico Santos and {Casanova}, Edresson and {Junior}, Arnaldo Candido and {Soares}, Anderson da Silva",
       title  = "CML-TTS: A Multilingual Dataset for Speech Synthesis in Low-Resource Languages",
@@ -586,23 +580,19 @@ The table below presents the total duration in hours of each language subsets pr
       year   = "2023,
     keywords = {Text-to-Speech, Multi-lingual speech dataset, Speech processing},
 }
+</pre>
 
-      </pre>
 
+<footer class="site-footer">
+    <a href="https://coqui.ai/" title="Coqui AI" target="_blank"> <img src="img/coqui.png" border="0" height="40"> </a>
+    <a href="http://www.deeplearningbrasil.com.br/" title="Deep Learning Brasil" target="_blank"> <img src="img/dlb.png" border="0" height="50"> </a>
 
-                <footer class="site-footer">
-                    <a href="https://coqui.ai/" title="Coqui AI" target="_blank"> <img src="img/coqui.png" border="0" height="40"> </a>
-                    <a href="http://www.defined.ai/" title="Defined.ai" target="_blank"> <img src="img/df.jpeg" border="0" height="50"> </a>
-                    <a href="http://www.deeplearningbrasil.com.br/" title="Deep Learning Brasil" target="_blank"> <img src="img/dlb.png" border="0" height="50"> </a>
-                    <a href="http://icmc.usp.br/" title="Institute of Mathematics and Computer Science (ICMC)" target="_blank"> <img src="img/icmc.png" border="0" height="55"> </a>
-                    <a href="https://www.soprabanking.com/" title="Sopra Banking Software" target="_blank"> <img src="img/sbs.png" border="0" height="38"> </a>
-                    <!--<a href="http://nilc.icmc.usp.br/" title="The Interinstitutional Center for Computational Linguistics(NILC)" target="_blank"> <img src="img/nilc.png" border="0" height="50"> </a>-->
-                    <div class="cleaner"></div>
-                </footer>
-                <span class="site-footer-owner">
-                    <center></center>
-                </span>
-    </section>
+    <div class="cleaner"></div>
+</footer>
+<span class="site-footer-owner">
+    <center></center>
+</span>
+</section>
 
 
 
