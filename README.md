@@ -16,7 +16,8 @@ You can download each version separately:
 - [Portuguese](https://drive.google.com/file/d/1KxwG0o6MwWq_hKUzeRGwZOx1HxMNfFMB/view?usp=share_link)
 - [Spanish](https://drive.google.com/file/d/18Nw5IDusZwGJA7MhFpSFwBl8CDLPLY90/view?usp=share_link)
 
-[Click Here](https://ufmtbr-my.sharepoint.com/:f:/g/personal/fredoliveira_ufmt_br/Ei8ztD2EsqdAiyQNEnXDHZMBW1BS_q0AD1EehRS1_m5xfQ) to acess an alternative download repository.
+An alternative repository for download can be accessed [IN THIS LINK](https://ufmtbr-my.sharepoint.com/:f:/g/personal/fredoliveira_ufmt_br/Ei8ztD2EsqdAiyQNEnXDHZMBW1BS_q0AD1EehRS1_m5xfQ).
+
 ## Statistics
 
 CML-TTS is a dataset comprising audiobooks sourced from the public domain books of [Project Gutenberg](https://www.gutenberg.org/), read by volunteers from the [LibriVox](https://librivox.org/) project. The dataset includes recordings in Dutch, German, French, Italian, Polish, Portuguese, and Spanish, all at a sampling rate of 24kHz. The following figure shows pie charts indicating the percentage of each language's duration (on the left), sample quality percentage (in the center), and the percentage of speakers' gender (on the right).
