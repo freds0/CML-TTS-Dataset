@@ -4,9 +4,17 @@ In this paper, we present CML-TTS, a recursive acronym for CML-Multi-Lingual-TTS
 
 
 ## Download
+To download the CML-TTS dataset, [click here]([https://librivox.org/](https://drive.google.com/drive/folders/1qIpZfvgoj8HGZxKmDNoMYelbad0VEI7H?usp=sharing)).
 
-It will soon be available for download.
+You can download each version separately:
 
+- [Dutch](https://drive.google.com/file/d/1ZEGphBtFegDMcBs1seuZAwP6npmgPyLq/view?usp=share_link)
+- [French](https://drive.google.com/file/d/1o5xJBFPWaMsjBpOrHDEGta4bVxNw7Ikx/view?usp=share_link)
+- [German](https://drive.google.com/file/d/1gny1W_SEdebT0W2LgIps3u2GGQPQ9kbS/view?usp=share_link)
+- [Italian](https://drive.google.com/file/d/187nE0vqrW9B_4D5s4_Q0mBhIoH2KF67X/view?usp=share_link)
+- [Polish](https://drive.google.com/file/d/1tMqT6CEYX3x_iyech7mcO22dMlp-sBLx/view?usp=share_link)
+- [Portuguese](https://drive.google.com/file/d/1KxwG0o6MwWq_hKUzeRGwZOx1HxMNfFMB/view?usp=share_link)
+- [Spanish](https://drive.google.com/file/d/18Nw5IDusZwGJA7MhFpSFwBl8CDLPLY90/view?usp=share_link)
 
 ## Statistics
 
