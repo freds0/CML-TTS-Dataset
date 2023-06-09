@@ -31,3 +31,15 @@ The table below displays the total duration of each language subset present in t
 ## Audio Samples
 
 To listen to samples from all the languages available in the CML-TTS dataset, as well as hear the YourTTS model trained using CML-TTS in conjunction with LibriTTS, please visit our website [https://freds0.github.io/CML-TTS-Dataset/](https://freds0.github.io/CML-TTS-Dataset/).
+
+## Citation
+
+```
+@inproceedings{cmltts,
+  title={CML-TTS: A Multilingual Dataset for Speech Synthesis in Low-Resource Languages },
+  author={Oliveira, Frederico S. and Casanova, Edresson and Junior, Arnaldo Candido and Soares, Anderson S. and Galvão, Arlindo},
+  booktitle={International Conference on Text, Speech, and Dialogue},
+  year={2023},
+  organization={Springer}
+}
+```
