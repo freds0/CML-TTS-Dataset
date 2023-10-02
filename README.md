@@ -48,11 +48,15 @@ To listen to samples from all the languages available in the CML-TTS dataset, as
 ## Citation
 
 ```
-@inproceedings{cmltts,
-  title={CML-TTS: A Multilingual Dataset for Speech Synthesis in Low-Resource Languages },
-  author={Oliveira, Frederico S. and Casanova, Edresson and Junior, Arnaldo Candido and Soares, Anderson S. and Galvão, Arlindo},
-  booktitle={International Conference on Text, Speech, and Dialogue},
-  year={2023},
-  organization={Springer}
+@InProceedings{Cmltts2023,
+    title="CML-TTS: A Multilingual Dataset for Speech Synthesis in Low-Resource Languages",
+    author="Oliveira, Frederico S. and Casanova, Edresson and Junior, Arnaldo Candido and Soares, Anderson S. and Galv{\~a}o Filho, Arlindo R.", 
+    editor="Ek{\v{s}}tein, Kamil and P{\'a}rtl, Franti{\v{s}}ek and Konop{\'i}k, Miloslav",
+    booktitle="Text, Speech, and Dialogue",
+    year="2023",
+    publisher="Springer Nature Switzerland",
+    address="Cham",
+    pages="188--199",
+    isbn="978-3-031-40498-6"
 }
 ```
