@@ -4,7 +4,7 @@ In this paper, we present CML-TTS, a recursive acronym for CML-Multi-Lingual-TTS
 
 
 ## Download
-To download the CML-TTS dataset, [click here]([https://librivox.org/](https://drive.google.com/drive/folders/1qIpZfvgoj8HGZxKmDNoMYelbad0VEI7H?usp=sharing)).
+To download the CML-TTS dataset, [click here](http://www.openslr.org/146/).
 
 You can download each version separately:
 
