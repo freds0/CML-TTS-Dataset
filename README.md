@@ -16,6 +16,7 @@ You can download each version separately:
 - [CML-TTS Dataset Portuguese](https://www.openslr.org/resources/146/cml_tts_dataset_portuguese_v0.1.tar.bz)
 - [CML-TTS Dataset Spanish](https://www.openslr.org/resources/146/cml_tts_dataset_spanish_v0.1.tar.bz)
 
+<!-- 
 Alternatively, the files are available on Google Drive:
 
 - [CML-TTS Dataset Dutch](https://drive.google.com/file/d/12L9vuj4pGsX-Ivyu6FHmygGP8FtbN0Wo/view?usp=sharing)
@@ -29,6 +30,8 @@ Alternatively, the files are available on Google Drive:
 As a last alternative, the download files can be accessed [in this link](https://ufmtbr-my.sharepoint.com/:f:/g/personal/fredoliveira_ufmt_br/Ei8ztD2EsqdAiyQNEnXDHZMBW1BS_q0AD1EehRS1_m5xfQ).
 
 The segments files are available at [Google Drive](https://drive.google.com/file/d/102DxVPyR9VgRFIZaFtEHJ3u_YAW9ZnEq/view?usp=sharing) and [One Drive](https://ufmtbr-my.sharepoint.com/:u:/g/personal/fredoliveira_ufmt_br/EScW5_fYuvtIslONTsyYJhsBiu8nzWwjDRFmMc8qBrpa7g?e=Ebrnrh).
+-->
+The segments files are available at [in this link](https://www.openslr.org/resources/146/cml_tts_dataset_segments_v0.1.tar.bz).
 
 After downloading check the md5sum of each file:
 ```
