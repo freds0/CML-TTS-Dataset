@@ -8,6 +8,16 @@ To download the CML-TTS dataset, [click here](http://www.openslr.org/146/).
 
 You can download each version separately:
 
+- [CML-TTS Dataset Dutch](https://www.openslr.org/resources/146/cml_tts_dataset_dutch_v0.1.tar.bz)
+- [CML-TTS Dataset French](https://www.openslr.org/resources/146/cml_tts_dataset_french_v0.1.tar.bz)
+- [CML-TTS Dataset German](https://www.openslr.org/resources/146/cml_tts_dataset_german_v0.1.tar.bz)
+- [CML-TTS Dataset Italian](https://www.openslr.org/resources/146/cml_tts_dataset_italian_v0.1.tar.bz)
+- [CML-TTS Dataset Polish](https://www.openslr.org/resources/146/cml_tts_dataset_polish_v0.1.tar.bz)
+- [CML-TTS Dataset Portuguese](https://www.openslr.org/resources/146/cml_tts_dataset_portuguese_v0.1.tar.bz)
+- [CML-TTS Dataset Spanish](https://www.openslr.org/resources/146/cml_tts_dataset_spanish_v0.1.tar.bz)
+
+Alternatively, the files are available on Google Drive:
+
 - [CML-TTS Dataset Dutch](https://drive.google.com/file/d/12L9vuj4pGsX-Ivyu6FHmygGP8FtbN0Wo/view?usp=sharing)
 - [CML-TTS Dataset French](https://drive.google.com/file/d/1o5xJBFPWaMsjBpOrHDEGta4bVxNw7Ikx/view?usp=share_link)
 - [CML-TTS Dataset German](https://drive.google.com/file/d/1gny1W_SEdebT0W2LgIps3u2GGQPQ9kbS/view?usp=share_link)
@@ -16,7 +26,7 @@ You can download each version separately:
 - [CML-TTS Dataset Portuguese](https://drive.google.com/file/d/1KxwG0o6MwWq_hKUzeRGwZOx1HxMNfFMB/view?usp=share_link)
 - [CML-TTS Dataset Spanish](https://drive.google.com/file/d/18Nw5IDusZwGJA7MhFpSFwBl8CDLPLY90/view?usp=share_link)
 
-An alternative repository for download can be accessed [in this link](https://ufmtbr-my.sharepoint.com/:f:/g/personal/fredoliveira_ufmt_br/Ei8ztD2EsqdAiyQNEnXDHZMBW1BS_q0AD1EehRS1_m5xfQ).
+As a last alternative, the download files can be accessed [in this link](https://ufmtbr-my.sharepoint.com/:f:/g/personal/fredoliveira_ufmt_br/Ei8ztD2EsqdAiyQNEnXDHZMBW1BS_q0AD1EehRS1_m5xfQ).
 
 The segments files are available at [Google Drive](https://drive.google.com/file/d/102DxVPyR9VgRFIZaFtEHJ3u_YAW9ZnEq/view?usp=sharing) and [One Drive](https://ufmtbr-my.sharepoint.com/:u:/g/personal/fredoliveira_ufmt_br/EScW5_fYuvtIslONTsyYJhsBiu8nzWwjDRFmMc8qBrpa7g?e=Ebrnrh).
 
