@@ -31,8 +31,8 @@ As a last alternative, the download files can be accessed [in this link](https:/
 
 The segments files are available at [Google Drive](https://drive.google.com/file/d/102DxVPyR9VgRFIZaFtEHJ3u_YAW9ZnEq/view?usp=sharing) and [One Drive](https://ufmtbr-my.sharepoint.com/:u:/g/personal/fredoliveira_ufmt_br/EScW5_fYuvtIslONTsyYJhsBiu8nzWwjDRFmMc8qBrpa7g?e=Ebrnrh).
 -->
-The segments files are available at [in this link](https://www.openslr.org/resources/146/cml_tts_dataset_segments_v0.1.tar.bz).
-
+The segments files are available at [this link](https://www.openslr.org/resources/146/cml_tts_dataset_segments_v0.1.tar.bz).
+The metadata files are available at [this link](https://ufmtbr-my.sharepoint.com/:u:/g/personal/frederico_oliveira_ufmt_br/EcSIE-VQn99FoZoYdt8KzlIBdsh2W7FZ0hDbEG2_feeWiw?e=LizcGL).
 After downloading check the md5sum of each file:
 ```
 56e11612ffea33282eced3d499cbb1ca  cml_tts_dataset_dutch_v0.1.tar.bz
